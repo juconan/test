@@ -1,0 +1,167 @@
+*** Starting uWSGI 2.0.21 (64bit) on [Tue Nov  8 07:27:49 2022] ***
+compiled with version: 10.2.1 20210110 on 08 November 2022 07:27:22
+os: Linux-5.15.0-52-generic #58~20.04.1-Ubuntu SMP Thu Oct 13 13:09:46 UTC 2022
+nodename: f07ef58db858
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /srv/docker-server
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/docker-server
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /srv/docker-server/apps.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.13 (main, Aug 23 2022, 09:07:44)  [GCC 10.2.1 20210110]
+Python main interpreter initialized at 0x5565381e70f0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5565381e70f0 pid: 1 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 6, cores: 2)
+[pid: 6|app: 0|req: 1/1] 192.168.56.1 () {40 vars in 716 bytes} [Tue Nov  8 07:27:58 2022] GET / => generated 22189 bytes in 21 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 6|app: 0|req: 2/2] 192.168.56.1 () {42 vars in 805 bytes} [Tue Nov  8 07:32:26 2022] GET / => generated 22189 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 6|app: 0|req: 3/3] 192.168.56.1 () {42 vars in 805 bytes} [Tue Nov  8 07:32:52 2022] GET / => generated 22189 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 6|app: 0|req: 4/4] 192.168.56.1 () {42 vars in 813 bytes} [Tue Nov  8 07:33:04 2022] GET /test => generated 4572 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 1)
+[pid: 6|app: 0|req: 5/5] 192.168.56.1 () {42 vars in 813 bytes} [Tue Nov  8 07:36:50 2022] GET /test => generated 4572 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+...brutally killing workers...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /srv/docker-server
+closing all non-uwsgi socket fds > 2 (max_fd = 1048576)...
+found fd 3 mapped to socket 0 (/srv/docker-server/apps.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.21 (64bit) on [Tue Nov  8 07:39:12 2022] ***
+compiled with version: 10.2.1 20210110 on 08 November 2022 07:27:22
+os: Linux-5.15.0-52-generic #58~20.04.1-Ubuntu SMP Thu Oct 13 13:09:46 UTC 2022
+nodename: f07ef58db858
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /srv/docker-server
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/docker-server
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /srv/docker-server/apps.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.13 (main, Aug 23 2022, 09:07:44)  [GCC 10.2.1 20210110]
+Python main interpreter initialized at 0x556a110ff0d0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x556a110ff0d0 pid: 1 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 8, cores: 2)
+*** Starting uWSGI 2.0.21 (64bit) on [Tue Nov  8 07:39:22 2022] ***
+compiled with version: 10.2.1 20210110 on 08 November 2022 07:38:45
+os: Linux-5.15.0-52-generic #58~20.04.1-Ubuntu SMP Thu Oct 13 13:09:46 UTC 2022
+nodename: 6320a2b7d228
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /srv/docker-server
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/docker-server
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /srv/docker-server/apps.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.13 (main, Aug 23 2022, 09:07:44)  [GCC 10.2.1 20210110]
+Python main interpreter initialized at 0x559b1da2f0f0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x559b1da2f0f0 pid: 1 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 7, cores: 2)
+[pid: 7|app: 0|req: 1/1] 192.168.56.1 () {44 vars in 844 bytes} [Tue Nov  8 07:39:23 2022] GET /test => generated 4572 bytes in 18 msecs (HTTP/1.1 200) 5 headers in 167 bytes (2 switches on core 0)
+[pid: 7|app: 0|req: 2/2] 192.168.56.1 () {42 vars in 805 bytes} [Tue Nov  8 07:39:29 2022] GET / => generated 22189 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 350 bytes (2 switches on core 1)
+[pid: 7|app: 0|req: 3/3] 192.168.56.1 () {42 vars in 813 bytes} [Tue Nov  8 07:39:47 2022] GET /test => generated 4572 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 7|app: 0|req: 4/4] 192.168.56.1 () {42 vars in 813 bytes} [Tue Nov  8 07:41:11 2022] GET /test => generated 4572 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 167 bytes (2 switches on core 1)
+[pid: 7|app: 0|req: 5/5] 192.168.56.1 () {44 vars in 844 bytes} [Tue Nov  8 07:42:03 2022] GET /test => generated 4572 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 167 bytes (1 switches on core 0)
+[pid: 7|app: 0|req: 6/6] 192.168.56.1 () {44 vars in 844 bytes} [Tue Nov  8 07:42:04 2022] GET /test => generated 4572 bytes in 1 msecs (HTTP/1.1 200) 5 headers in 167 bytes (2 switches on core 1)
+...brutally killing workers...
+worker 1 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /srv/docker-server
+closing all non-uwsgi socket fds > 2 (max_fd = 1048576)...
+found fd 3 mapped to socket 0 (/srv/docker-server/apps.sock)
+running /usr/local/bin/uwsgi
+[uWSGI] getting INI configuration from uwsgi.ini
+*** Starting uWSGI 2.0.21 (64bit) on [Tue Nov  8 07:58:36 2022] ***
+compiled with version: 10.2.1 20210110 on 08 November 2022 07:38:45
+os: Linux-5.15.0-52-generic #58~20.04.1-Ubuntu SMP Thu Oct 13 13:09:46 UTC 2022
+nodename: 6320a2b7d228
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 2
+current working directory: /srv/docker-server
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /srv/docker-server
+your memory page size is 4096 bytes
+detected max file descriptor number: 1048576
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited UNIX address /srv/docker-server/apps.sock fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.9.13 (main, Aug 23 2022, 09:07:44)  [GCC 10.2.1 20210110]
+Python main interpreter initialized at 0x564b0ed4a0d0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 166752 bytes (162 KB) for 2 cores
+*** Operational MODE: threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x564b0ed4a0d0 pid: 1 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1)
+spawned uWSGI worker 1 (pid: 9, cores: 2)
